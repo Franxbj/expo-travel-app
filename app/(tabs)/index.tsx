@@ -12,6 +12,8 @@ import { Ionicons } from "@expo/vector-icons";
 import Colors from "@/constants/Colors";
 import { useHeaderHeight } from "@react-navigation/elements";
 import CategoryButtons from "@/components/CategoryButtons";
+import Listings from "@/components/Listings";
+import listingData from "@/data/destinations.json"
 
 
 
@@ -80,6 +82,7 @@ const Page = () => {
 
         <CategoryButtons onCategoryChanged={onCatChanged}/>
 
+        <Listings listings ={listingData} category={category} />
 
       </View>
     </>
